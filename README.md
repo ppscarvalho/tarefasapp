@@ -40,13 +40,27 @@ Você pode conferir [o repositório Next.js no GitHub](https://github.com/vercel
 A maneira mais fácil de implantar seu aplicativo Next.js é usar a [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) dos criadores do Next.js.
 
 Consulte a [Next.js deployment documentation](https://nextjs.org/docs/deployment) par amais detalhes.
+
 # Sistema de Cadastro de Tarefas
-Para fazer login no sistema de cadastro de tarefas, você vai precisar confirgurar na sua conta do google um CLIENT_ID e um CLIENT_SECRET, também vai precisar gerar um token. Você pode usar (https://www.md5hashgenerator.com/).
+Um Sistema de Cadastro de Tarefas permite aos usuários criar, gerenciar e organizar suas atividades diárias de forma eficiente. Ao cadastrar uma tarefa, o usuário tem a opção de defini-la como pública ou privada. No caso de uma tarefa privada, ela é visível e acessível apenas ao usuário que a criou, garantindo a confidencialidade de suas atividades.
 
-Para gerar suas credentias no google acesse: (https://console.developers.google.com/apis/credentials)
+Por outro lado, ao cadastrar uma tarefa pública, essa se torna visível para todos os usuários do sistema. Nessa modalidade, qualquer usuário pode visualizar a tarefa e interagir com ela por meio de comentários, promovendo colaboração ou fornecendo feedback. Apesar de a tarefa pública permitir a interação de outros usuários, somente o criador da tarefa tem permissão para excluí-la, mantendo o controle sobre suas próprias atividades.
+
+Este sistema oferece uma maneira versátil e segura de gerenciar tarefas, permitindo que os usuários escolham como desejam compartilhar suas atividades e interagir com a comunidade, garantindo, ao mesmo tempo, o controle sobre suas informações.
+
+# Como se logar o sistema
+
+Para fazer login no Sistema de Cadastro de Tarefas, é necessário configurar algumas credenciais em sua conta do Google. Primeiro, você precisará criar um CLIENT_ID e um CLIENT_SECRET, que são credenciais específicas que permitem que o sistema se autentique com a sua conta do Google. Além disso, será necessário gerar um token de acesso, que permite ao sistema realizar a autenticação de maneira segura.
+
+Essas configurações são fundamentais para garantir a segurança e a privacidade do seu acesso, assegurando que apenas você possa gerenciar suas tarefas e informações dentro do sistema. Uma vez configurados, esses dados permitirão que você realize o login de forma simples e segura, utilizando sua conta Google como meio de autenticação.
+
+## Para gerar suas credentias no google acesse
+→ https://console.developers.google.com/apis/credentials
+## Para gerar seu token acesse
+→ https://www.md5hashgenerator.com/.
 
 
-## Informação importe que você não pode deixar de configurar
+## Criar um arquivo .env
 No Next.js, o arquivo .env é um arquivo que contém configurações que o Next procura automaticamente quando o servidor é iniciado. O arquivo .env pode ser criado na raiz do projeto com o nome convencionado .env.local. As configurações podem variar de projeto para projeto
 
 ```
