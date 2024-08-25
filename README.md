@@ -2,7 +2,15 @@ Este é um projeto [Next.js](https://nextjs.org/) inicializado com [`create-next
 
 ## Começando
 
-Primeiro, execute o servidor de desenvolvimento:
+Primeiro, execute o comando para instalar os pacotes da aplicação. 
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Depois execute o comando para rodar aplicação.
 
 ```bash
 npm run dev
